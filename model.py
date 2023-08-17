@@ -381,18 +381,3 @@ if __name__ == "__main__":
     # obs_permute = patches.numpy()
     # output_permute = model(obs_permute, prev_act)
     # print(torch.allclose(output, output_permute, atol=1e-6))
-
-
-    # model = AttentionNeuronSequenceVector(obs_dim=28,
-    #                                 act_dim=8,
-    #                                 hidden_dim=32,
-    #                                 msg_dim=32,
-    #                                 pos_em_dim=8).to(torch.device("cpu"))
-    # x = torch.randn(10, 28)
-    # pre_a = torch.randn(8)
-    # output = model(x, pre_a)
-    # print(output)
-    # x1 = x[torch.randperm(10)]
-    # output1 = model(x1, pre_a)
-    # print(output1)
-    # print(torch.allclose(output, output1, atol=1e-6))
